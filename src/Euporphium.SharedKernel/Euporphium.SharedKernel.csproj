@@ -4,7 +4,23 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <!-- Package metadata -->
+        <PackageId>Euporphium.SharedKernel</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Daniel Newton (@euporphium)</Authors>
+        <Company>Daniel Newton</Company>
+        <Description>A shared kernel library providing core domain-driven design building blocks including entities, value objects, domain events, and more.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/euporphium/Euporphium.SharedKernel</PackageProjectUrl>
+        <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;ValueObject;Value Object;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/euporphium/Euporphium.SharedKernel.git</RepositoryUrl>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="MediatR" Version="12.4.1" />
